@@ -229,14 +229,6 @@ p,
     max-width: 60%;
   }
 
-  .pro-img {
-    width: 30%;
-  }
-
-  .pro-img img {
-    max-width: 120%;
-  }
-
   .partners .img-card {
     display: flex;
     flex-direction: row;
@@ -326,5 +318,8 @@ p,
 
   .partners .img-card {
     max-width: 100%;
+  }
+  .pro-img {
+    flex: 1 1 50%;
   }
 }
