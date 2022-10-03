@@ -12,6 +12,7 @@ html {
 
 .container {
   max-width: 1150px;
+  width: 90%;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -22,6 +23,7 @@ html {
   border-radius: 40px;
 }
 
+/* Nav Styles */
 .nav-top {
   background-color: #0084fd;
   height: 65px;
@@ -45,7 +47,51 @@ html {
   cursor: pointer;
 }
 
+/* First section */
+
+.container.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #b5ddff;
+  border-radius: 50px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.features-card h2 {
+  color: #0084fd;
+}
+
+.features-card h2,
+p,
+.btn {
+  margin-bottom: 20px;
+}
+
+.btn.app-store {
+  background-color: #0084fd;
+  color: white;
+  padding: 0.3rem 3rem;
+}
+
+.phone img {
+  max-width: 100%;
+  margin-bottom: -40px;
+}
+
+.features-icon {
+  font-size: 80px;
+  color: #0084fd;
+}
+
 @media screen and (min-width: 811px) {
+  /* Nav Styles */
   .nav-top ul {
     display: flex;
     align-items: center;
