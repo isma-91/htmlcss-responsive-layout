@@ -103,6 +103,62 @@ p,
   color: #0084fd;
 }
 
+.violet {
+  background-color: #9792e4;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.violet-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.violet-left h2 {
+  align-self: flex-start;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.violet-left img {
+  max-width: 100%;
+  padding: 60px 0;
+}
+
+.img-card {
+  background-color: white;
+  color: black;
+  border-radius: 40px;
+}
+
+.img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img-card img {
+  max-width: 100%;
+}
+
+.img-card h3 {
+  margin: 20px 0;
+}
+
+.img-card p {
+  font-style: italic;
+  text-align: center;
+}
+
+.circle {
+  background-color: #9792e4;
+  border-radius: 20em;
+  padding: 7px 15px;
+}
+
 @media screen and (min-width: 400px) {
   .container.column {
     display: flex;
@@ -181,5 +237,30 @@ p,
   .phone img {
     max-width: 80%;
     margin-bottom: 0;
+  }
+
+  .violet .container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-end;
+    padding: 0 150px;
+  }
+  .violet-left {
+    flex: 1 1 50%;
+  }
+
+  .violet-left img {
+    max-width: 80%;
+    padding: 60px 0;
+  }
+
+  .img-card {
+    flex: 1 1 50%;
+    max-width: 340px;
+  }
+
+  .img-card img {
+    max-width: 60%;
   }
 }
