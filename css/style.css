@@ -23,6 +23,10 @@ html {
   border-radius: 40px;
 }
 
+img {
+  display: block;
+}
+
 /* Nav Styles */
 .nav-top {
   background-color: #0084fd;
@@ -92,7 +96,6 @@ p,
 
 .phone img {
   max-width: 100%;
-  margin-bottom: -10px;
 }
 
 .features-icon {
@@ -114,7 +117,7 @@ p,
 
   .features-card.big {
     align-items: flex-start;
-    flex: 1 1 60%;
+    flex: 2 1 calc(60% + 10px);
   }
 
   .features-card {
