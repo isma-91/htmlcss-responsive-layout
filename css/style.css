@@ -3,3 +3,82 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-family: "Mukta", sans-serif;
+}
+
+/* General Styles */
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  border-radius: 40px;
+}
+
+.nav-top {
+  background-color: #0084fd;
+  height: 65px;
+}
+
+.nav-top .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Logo non si centra verticalmente bene */
+
+.nav-top ul {
+  display: none;
+}
+
+.burger {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 811px) {
+  .nav-top ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+  }
+
+  .nav-top li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .nav-top a {
+    text-decoration: none;
+  }
+
+  .nav-top .nav-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 100%;
+    padding: 0 1rem;
+    margin: 0 1rem;
+  }
+
+  .btn.nav-btn {
+    color: black;
+    background-color: white;
+    padding: 0.5rem;
+  }
+
+  .burger {
+    display: none;
+  }
+}
