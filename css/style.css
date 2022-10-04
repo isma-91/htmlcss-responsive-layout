@@ -35,6 +35,12 @@ img {
   border-radius: 40px;
 }
 
+.features-card {
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
 /* Nav Styles */
 .nav-top {
   background-color: #0084fd;
@@ -65,14 +71,11 @@ img {
   flex-direction: column;
 }
 
-.features-card {
+.column .features-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #b5ddff;
-  border-radius: 50px;
-  padding: 30px;
-  margin-top: 30px;
 }
 
 .features-card.big {
@@ -85,11 +88,11 @@ img {
   align-items: center;
 }
 
-.features-card h2 {
+.column .features-card h2 {
   color: #0084fd;
 }
 
-.features-card h2,
+.column .features-card h2,
 p,
 .app-store {
   margin-bottom: 20px;
@@ -113,7 +116,7 @@ p,
 .violet {
   background-color: #9792e4;
   margin-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .violet-left {
@@ -202,6 +205,50 @@ p,
   font-size: 1.3em;
 }
 
+.violet.no-pad {
+  padding: 0;
+  padding-bottom: 30px;
+}
+.violet.no-pad h2 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* In questa sezione ho voluto provare a ottenere lo stesso effetto senza usare Media Query, dato che hanno detto che meglio utilizzarle quando strettamente necessario. Sembrerebbe ottenere lo stesso risultato con flex, ma gradirei sapere se è corretto oppure no.*/
+.container.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+.features-card.white {
+  background-color: white;
+  flex: 1 1 30%;
+  max-height: 380px;
+  min-width: 255px;
+}
+
+.features-card.white .num {
+  font-size: 70px;
+  font-weight: bold;
+  color: #9792e4;
+  margin: -35px 0;
+}
+
+.features-card.white h3 {
+  color: #9792e4;
+  margin: 20px 0;
+}
+
+.features-card.white .btn {
+  background-color: #9792e4;
+  color: white;
+  padding: 3px 35px;
+}
+
 @media screen and (min-width: 400px) {
   .container.column {
     display: flex;
@@ -214,12 +261,12 @@ p,
     align-items: flex-start;
   }
 
-  .features-card.big {
+  .column .features-card.big {
     align-items: flex-start;
     flex: 2 1 calc(60% + 10px);
   }
 
-  .features-card {
+  .column .features-card {
     flex: 1 1 30%;
   }
   .phone {
@@ -291,7 +338,7 @@ p,
     margin-bottom: 0;
   }
 
-  .violet .container {
+  .violet .violet-container {
     display: flex;
     flex-direction: row;
     gap: 40px;
