@@ -21,6 +21,7 @@ html {
   display: inline-block;
   white-space: nowrap;
   border-radius: 40px;
+  text-decoration: none;
 }
 
 .btn.more {
@@ -161,6 +162,10 @@ p,
   background-color: #9792e4;
   border-radius: 20em;
   padding: 7px 15px;
+}
+
+.circle a {
+  color: black;
 }
 
 .container.partners {
@@ -316,7 +321,7 @@ p,
   color: orange;
 }
 
-.violet .cta-container a {
+.white-link {
   color: white;
 }
 
