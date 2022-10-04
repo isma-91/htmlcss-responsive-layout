@@ -83,10 +83,12 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: #b5ddff;
+  text-align: center;
 }
 
 .features-card.big {
   padding-bottom: 0;
+  text-align: left;
 }
 
 .big-left {
