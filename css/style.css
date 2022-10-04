@@ -23,6 +23,12 @@ html {
   border-radius: 40px;
 }
 
+.btn.more {
+  background-color: #9792e4;
+  color: white;
+  padding: 3px 35px;
+}
+
 img {
   display: block;
 }
@@ -243,10 +249,87 @@ p,
   margin: 20px 0;
 }
 
-.features-card.white .btn {
-  background-color: #9792e4;
+.about-us {
+  padding-bottom: 30px;
+}
+.about-us-left h2 {
+  color: #9792e4;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.about-us-right {
+  color: #9792e4;
+}
+
+.about-us-right .img-card {
+  position: relative;
+  width: 60%;
+}
+
+.about-us-right img {
+  width: 100%;
+  clip-path: circle();
+  margin-bottom: 20px;
+}
+
+.about-us-right p {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+.absolute {
+  font-size: 80px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
   color: white;
-  padding: 3px 35px;
+  text-align: center;
+}
+
+.light {
+  font-weight: lighter;
+  opacity: 0.5;
+  padding: 20px 0;
+}
+
+.simple {
+  font-size: 30px;
+}
+
+.orange {
+  font-size: 70px;
+  color: orange;
+}
+
+.violet .cta-container a {
+  color: white;
+}
+
+.btn.cta {
+  background-color: white;
+  color: #9792e4;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 90px;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #333333;
+  padding-top: 40px;
+}
+
+footer a {
+  color: ;
 }
 
 @media screen and (min-width: 400px) {
@@ -283,6 +366,26 @@ p,
 
   .credit {
     text-align: left;
+  }
+
+  .about-us {
+    display: flex;
+    gap: 60px;
+  }
+
+  .about-us-left {
+    flex: 1 1 60%;
+  }
+
+  .about-us-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 30%;
+  }
+  .about-us-right .img-card {
+    width: 100%;
   }
 }
 
