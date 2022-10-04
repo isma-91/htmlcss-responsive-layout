@@ -217,7 +217,7 @@ p,
 }
 .violet.no-pad h2 {
   color: white;
-  font-size: 2em;
+  font-size: 2.4em;
   text-align: center;
   padding-top: 20px;
 }
@@ -258,13 +258,19 @@ p,
   margin: 20px 0;
 }
 
+.about-us-left p {
+  line-height: 2.6rem;
+}
+
 .about-us-right {
   color: #9792e4;
 }
 
-.about-us-right .img-card {
+.about-us-right .about-position {
+  padding-top: 30px;
+  max-width: 60%;
   position: relative;
-  width: 60%;
+  align-items: flex-start;
 }
 
 .about-us-right img {
@@ -274,7 +280,7 @@ p,
 }
 
 .about-us-right p {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   line-height: 1.3em;
 }
@@ -282,8 +288,8 @@ p,
 .absolute {
   font-size: 80px;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 20px;
+  right: -15px;
 }
 
 .cta-container {
@@ -328,10 +334,6 @@ footer {
   padding-top: 40px;
 }
 
-footer a {
-  color: ;
-}
-
 @media screen and (min-width: 400px) {
   .container.column {
     display: flex;
@@ -370,11 +372,11 @@ footer a {
 
   .about-us {
     display: flex;
-    gap: 60px;
+    gap: 70px;
   }
 
   .about-us-left {
-    flex: 1 1 60%;
+    flex: 2 1 75%;
   }
 
   .about-us-right {
@@ -382,10 +384,11 @@ footer a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    flex: 1 1 30%;
+    flex: 1 1 25%;
   }
-  .about-us-right .img-card {
-    width: 100%;
+
+  .about-us-right .about-position {
+    max-width: 80%;
   }
 }
 
