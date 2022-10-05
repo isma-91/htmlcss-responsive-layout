@@ -203,6 +203,7 @@ p,
   width: 100%;
   clip-path: circle();
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .credit {
