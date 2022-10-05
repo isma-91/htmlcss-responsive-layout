@@ -479,7 +479,8 @@ footer {
   .partners .img-card {
     max-width: 100%;
   }
+
   .pro-img {
-    flex: 1 1 50%;
+    flex: 1 1 35%;
   }
 }
